@@ -1,0 +1,64 @@
+/* Colors */
+$blue =  #22A7F0;
+$purple =  #BF55EC;
+$pink =  #F62459;
+$yellow = #F7CA18;
+$orange = #F89406;
+$green = #2ECC71;
+
+$Button(a)
+  position: relative;
+  border:2px solid a;
+  color:a;
+  &.active
+  &:active
+  &:hover 
+    background:a;
+    color:#FFF;
+
+body 
+  margin: 0;
+  background-color: #090812;
+  font-family: Helvetica, Arial, sans-serif;
+  
+#buttons
+  text-align:center;
+  color: #fff;
+  
+h1
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-weight:normal;
+  margin:50px auto;
+  text-transform: uppercase
+
+button 
+  outline: 0;
+  border: 0;
+  background:none;
+  margin:25px;
+  padding: 10px 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size:15px;
+  color: #fff;
+  cursor:pointer;
+  border-radius:50px;
+  transition: all 0.3s ease;
+
+  &.blue 
+    $Button($blue)
+    
+ &.purple
+    $Button($purple)
+    
+ &.pink
+    $Button($pink)
+    
+ &.yellow
+    $Button($yellow)
+    
+ &.green
+    $Button($green)
+    
+ &.orange
+    $Button($orange)
+ 
